@@ -82,7 +82,7 @@ returns {configurations: &lt;array of matching configurations&gt; }
 
 ##### Sorting and Pagination
 
-The configurations command supports sorting and pagination via query parameters, you can use both paging and sorting parameters in a single request. Note: sorting and page are only applicable to requests without configuration.name specified.
+The configurations command supports sorting and pagination via query parameters, you can use both paging and sorting parameters in a single request. Note: sorting and paging are only applicable to requests without configuration.name specified.
 
 ###### sorting params
 
@@ -111,13 +111,14 @@ returns json object in the form of
             endIndex: <index/position of last item on page - relative to the entire set of items>,
             pageSize: <number of items per page>,  
             pageNum: <the page number being returned>,
-            totalItems: <total number of items in enitre set of items>
+            totalItems: <total number of items in entire set of items>
         } 
 
 #### create
 
 * path: /configurations
 * method: POST
+* body: JSON encoded object containing a complete configuration record
 * authenticated: true
     
 example:
@@ -130,6 +131,7 @@ returns {name: "&lt;configuration.name&gt;"} if succeeds otherwise error object 
 
 * path: /configurations/<configuration.name>
 * method: PUT
+* body: JSON encoded object containing a complete configuration record
 * authenticated: true
     
 example:
