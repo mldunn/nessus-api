@@ -154,6 +154,6 @@ returns {status: "ok"} if succeeds otherwise error object is returned
 
 ## Testing
 
-Custom test scripts have been included in the test directory and can be invoked via `npm test` all output is logged to console
+Custom test scripts have been included in the test directory and can be invoked via `npm test` all output is logged to console.  Note: the server must be running for the test scripts to run
 
     
