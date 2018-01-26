@@ -1,0 +1,23 @@
+{
+  "name": "nessus-api",
+  "version": "1.0.0",
+  "description": "simple REST API exercise",
+  "main": "server.js",
+  "scripts": {
+    "test": "node test/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mldunn/nessus-api.git"
+  },
+  "keywords": [
+    "nessus",
+    "configurations"
+  ],
+  "author": "Michael Dunn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mldunn/nessus-api/issues"
+  },
+  "homepage": "https://github.com/mldunn/nessus-api#readme"
+}
