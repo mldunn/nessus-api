@@ -77,7 +77,7 @@ example:
 
     curl -H "x-foo-auth-token: <token>;"  http://localhost:8100/configurations/<configuration.name>
 
-returns {configurations: <array of matching configurations>, }    
+returns {configurations: &lt;array of matching configurations&gt; }    
 
 
 ##### Sorting and Pagination
@@ -92,9 +92,9 @@ The configurations command supports sorting and pagination via query parameters,
 
     http://localhost:8100/configurations?sortby=hostname&sortorder=desc
 
-returns {configurations: <array of sorted configurations>}    
+returns {configurations: &lt;array of sorted configurations&gt;}    
 
-##### paginatination - note the returned object contains additional paging information
+##### pagination - note the returned object contains additional paging information
 
     pagenum = <page number> - page number to be retrieved
     pagesize = <number of items per page> - if none specfied defaults to 12
