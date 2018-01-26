@@ -87,8 +87,7 @@ The configurations command supports sorting and pagination via query parameters,
 ###### sorting params
 
     sortby=<field name>  -  valid fields are name, hostname, port, and username
-
-    sortorder= asc | desc  - defaults to ascending if not specified or invalid
+    sortorder=asc|desc  - defaults to ascending if not specified or invalid
 
     http://localhost:8100/configurations?sortby=hostname&sortorder=desc
 
@@ -107,12 +106,12 @@ returns {configurations: &lt;array of sorted configurations&gt;}
 returns json object in the form of
 
         {   
-            configurations: <array of matching configurations>, 
-            startIndex: <startIndex>,  
-            endIndex: <endIndex>,
+            configurations: <array of configurations for the page>, 
+            startIndex: <index/position of first item on page - relative to the entire set of items>,  
+            endIndex: <index/position of last item on page - relative to the entire set of items>,
             pageSize: <number of items per page>,  
             pageNum: <the page number being returned>,
-            totalItems: <total nunber of items in all pages>
+            totalItems: <total number of items in enitre set of items>
         } 
 
 #### create
