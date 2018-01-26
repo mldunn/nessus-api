@@ -75,7 +75,7 @@ example:
 
     curl -H "x-foo-auth-token: <token>"  http://localhost:8100/configurations
 
-    curl -H "x-foo-auth-token: <token>;"  http://localhost:8100/configurations/<configuration.name>
+    curl -H "x-foo-auth-token: <token>"  http://localhost:8100/configurations/<configuration.name>
 
 returns {configurations: &lt;array of matching configurations&gt; }    
 
